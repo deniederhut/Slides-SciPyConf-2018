@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Filipe Fernandes">
+  <title>Building your own Weather App using NOAA Open Data and Jupyter Notebooks</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    background-color: #2a211c;
+    color: #bdae9d;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #bdae9d;  padding-left: 4px; }
+div.sourceCode
+  { color: #bdae9d; background-color: #2a211c; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ffff00; } /* Alert */
+code span.an { color: #0066ff; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { } /* Attribute */
+code span.bn { color: #44aa43; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #43a8ed; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #049b0a; } /* Char */
+code span.cn { } /* Constant */
+code span.co { color: #0066ff; font-weight: bold; font-style: italic; } /* Comment */
+code span.do { color: #0066ff; font-style: italic; } /* Documentation */
+code span.dt { text-decoration: underline; } /* DataType */
+code span.dv { color: #44aa43; } /* DecVal */
+code span.er { color: #ffff00; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #44aa43; } /* Float */
+code span.fu { color: #ff9358; font-weight: bold; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #0066ff; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #43a8ed; font-weight: bold; } /* Keyword */
+code span.op { } /* Operator */
+code span.pp { font-weight: bold; } /* Preprocessor */
+code span.sc { color: #049b0a; } /* SpecialChar */
+code span.ss { color: #049b0a; } /* SpecialString */
+code span.st { color: #049b0a; } /* String */
+code span.va { } /* Variable */
+code span.vs { color: #049b0a; } /* VerbatimString */
+code span.wa { color: #ffff00; font-weight: bold; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="slides.css"/>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Building your own Weather App using NOAA Open Data and Jupyter Notebooks</h1>
+  <p class="author">Filipe Fernandes</p>
+  <p class="date">Jul 13, 2018</p>
+</section>
+
+<section id="whoami" class="slide level1">
+<h1><code>whoami</code></h1>
+<p>Filipe Fernandes</p>
+<ul>
+<li class="fragment">Physical Oceanographer</li>
+<li class="fragment">Data Plumber</li>
+<li class="fragment">Code Janitor</li>
+<li class="fragment">CI babysitter</li>
+<li class="fragment">Amazon-Dash-Button for conda-forge</li>
+</ul>
+</section>
+<section id="previous-talks-standards" class="slide level1">
+<h1>Previous talks: standards</h1>
+<iframe width="700" height="500" src="https://www.youtube.com/embed/BV30Sk1CrM0?start=1771" frameborder="0" allow="encrypted-media" allowfullscreen>
+</iframe>
+<p><a href="https://www.youtube.com/watch?v=BV30Sk1CrM0" class="uri">https://www.youtube.com/watch?v=BV30Sk1CrM0</a></p>
+</section>
+<section id="previous-talks-ocean-models" class="slide level1">
+<h1>Previous talks: ocean models</h1>
+<iframe width="700" height="500" src="https://www.youtube.com/embed/WHjU_rg81BI?start=1771" frameborder="0" allow="encrypted-media" allowfullscreen>
+</iframe>
+<p><a href="https://www.youtube.com/watch?v=WHjU_rg81BI" class="uri">https://www.youtube.com/watch?v=WHjU_rg81BI</a></p>
+</section>
+<section id="ioos" class="slide level1">
+<h1>IOOS</h1>
+<p><img data-src="images/IOOS-RAs.jpg" /></p>
+</section>
+<section id="ioos-numbers" class="slide level1">
+<h1>IOOS numbers</h1>
+<p><img data-src="images/ioos_by_the_numbers_graphic2_feb2017-2.png" /></p>
+</section>
+<section id="code-gallery" class="slide level1">
+<h1>Code gallery</h1>
+<p><img src="images/code-gallery.png" height=450></p>
+<p><a href="http://ioos.github.io/notebooks_demos/code_gallery" class="uri">http://ioos.github.io/notebooks_demos/code_gallery</a></p>
+</section>
+<section id="standards" class="slide level1">
+<h1>Standards</h1>
+<p>
+<img src="images/OGC_Logo_2D_Blue_x_0_0.png" height=100 style="background-color:white"> <img src="images/iso-logo-print.gif" height=100> <img src="images/unidata-logo.png" height=100 style="background-color:white">
+</p>
+<ul>
+<li class="fragment">avoid customer-specific solutions</li>
+<li class="fragment">the standardizations happen at the data providers</li>
+</ul>
+<div class="fragment">
+<p><img src="images/standards.svg" height=250 style="background-color:white"></p>
+</div>
+</section>
+<section id="ioos-web-services" class="slide level1">
+<h1>IOOS Web Services</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Data Type</th>
+<th>Web Service</th>
+<th>Response</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>In-situ data<br>(buoys, stations, etc)</td>
+<td>OGC SOS</td>
+<td>XML/CSV</td>
+</tr>
+<tr class="even">
+<td>Gridded data (models, satellite)</td>
+<td>OPeNDAP</td>
+<td>Binary</td>
+</tr>
+<tr class="odd">
+<td>Raster Images</td>
+<td>OGC WMS</td>
+<td>GeoTIFF/PNG</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p>There is also <code>ERDDAP</code> emerging as a community standard.</p>
+</div>
+</section>
+<section id="sensor-observation-service" class="slide level1">
+<h1>Sensor Observation Service</h1>
+<p>(OGC SOS)</p>
+<ul>
+<li class="fragment"><code>GetCapabilities</code>: metadata</li>
+<li class="fragment"><code>DescribeSensor</code>: detail info on the instruments</li>
+<li class="fragment"><code>GetObservation</code>: the data</li>
+</ul>
+</section>
+<section id="sos-example" class="slide level1">
+<h1>SOS example</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" data-line-number="1">url <span class="op">=</span> (</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">    <span class="st">&#39;https://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/SOS?&#39;</span></a>
+<a class="sourceLine" id="cb1-3" data-line-number="3">    <span class="st">&#39;service=SOS&#39;</span></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4">    <span class="st">&#39;&amp;request=GetObservation&#39;</span></a>
+<a class="sourceLine" id="cb1-5" data-line-number="5">    <span class="st">&#39;&amp;version=1.0.0&#39;</span></a>
+<a class="sourceLine" id="cb1-6" data-line-number="6">    <span class="st">&#39;&amp;observedProperty=water_surface_height_above_reference&#39;</span></a>
+<a class="sourceLine" id="cb1-7" data-line-number="7">    <span class="st">&#39;&amp;offering=urn:ioos:station:NOAA.NOS.CO-OPS:8454000&#39;</span></a>
+<a class="sourceLine" id="cb1-8" data-line-number="8">    <span class="st">&#39;&amp;responseFormat=text/csv&#39;</span></a>
+<a class="sourceLine" id="cb1-9" data-line-number="9">    <span class="st">&#39;&amp;eventTime=2018-07-04T00:00:00Z/2018-07-05T00:00:00Z&#39;</span></a>
+<a class="sourceLine" id="cb1-10" data-line-number="10">    <span class="st">&#39;&amp;result=VerticalDatum==urn:ogc:def:datum:epsg::5103&#39;</span></a>
+<a class="sourceLine" id="cb1-11" data-line-number="11">    <span class="st">&#39;&amp;dataType=PreliminarySixMinute&#39;</span></a>
+<a class="sourceLine" id="cb1-12" data-line-number="12">)</a></code></pre></div>
+</section>
+<section id="if-we-add-python-to-it" class="slide level1">
+<h1>If we add Python to it</h1>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" data-line-number="1">url <span class="op">=</span> (</a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">    <span class="ss">f&#39;https://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/SOS?&#39;</span></a>
+<a class="sourceLine" id="cb2-3" data-line-number="3">    <span class="ss">f&#39;service=SOS&amp;request=</span><span class="sc">{</span>request<span class="sc">}</span><span class="ss">&#39;</span></a>
+<a class="sourceLine" id="cb2-4" data-line-number="4">    <span class="ss">f&#39;&amp;version=</span><span class="sc">{</span>version<span class="sc">}</span><span class="ss">&#39;</span></a>
+<a class="sourceLine" id="cb2-5" data-line-number="5">    <span class="ss">f&#39;&amp;observedProperty=</span><span class="sc">{</span>variable<span class="sc">}</span><span class="ss">&#39;</span></a>
+<a class="sourceLine" id="cb2-6" data-line-number="6">    <span class="ss">f&#39;&amp;offering=urn:ioos:station:NOAA.NOS.CO-OPS:8454000&#39;</span></a>
+<a class="sourceLine" id="cb2-7" data-line-number="7">    <span class="ss">f&#39;&amp;responseFormat=</span><span class="sc">{</span>response<span class="sc">}</span><span class="ss">&#39;</span></a>
+<a class="sourceLine" id="cb2-8" data-line-number="8">    <span class="ss">f&#39;&amp;eventTime=</span><span class="sc">{</span>yesterday<span class="sc">:</span><span class="op">%</span><span class="sc">Y</span><span class="op">-%</span><span class="sc">m</span><span class="op">-%</span><span class="sc">dT</span><span class="op">%</span><span class="sc">H:</span><span class="op">%</span><span class="sc">M:</span><span class="op">%</span><span class="sc">SZ}</span><span class="ss">/&#39;</span></a>
+<a class="sourceLine" id="cb2-9" data-line-number="9">    <span class="ss">f&#39;</span><span class="sc">{</span>today<span class="sc">:</span><span class="op">%</span><span class="sc">Y</span><span class="op">-%</span><span class="sc">m</span><span class="op">-%</span><span class="sc">dT</span><span class="op">%</span><span class="sc">H:</span><span class="op">%</span><span class="sc">M:</span><span class="op">%</span><span class="sc">SZ}</span><span class="ss">&#39;</span></a>
+<a class="sourceLine" id="cb2-10" data-line-number="10">    <span class="ss">f&#39;&amp;result=VerticalDatum==</span><span class="sc">{</span>vdatum<span class="sc">}</span><span class="ss">&#39;</span></a>
+<a class="sourceLine" id="cb2-11" data-line-number="11">    <span class="ss">f&#39;&amp;dataType=</span><span class="sc">{</span>data_type<span class="sc">}</span><span class="ss">&#39;</span></a>
+<a class="sourceLine" id="cb2-12" data-line-number="12">)</a></code></pre></div>
+<div class="fragment">
+<p><a href="http://localhost:8888/notebooks/00-SOS.ipynb"> <img src="images/jupyterhub.svg" height=75 style="background-color:white"> </a></p>
+</div>
+</section>
+<section id="opendapclimate-and-forecast" class="slide level1">
+<h1>OPeNDAP/Climate and Forecast</h1>
+<p>(CF)</p>
+<iframe src="http://cfconventions.org/" width="750px" height="450px">
+</iframe>
+</section>
+<section id="cf---metadata" class="slide level1">
+<h1>CF - Metadata</h1>
+<div class="sourceCode" id="cb3"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb3-1" data-line-number="1">float temp(ocean_time, s_rho, eta_rho, xi_rho);</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2">    temp:standard_name = &quot;sea_water_potential_temperature&quot;</a>
+<a class="sourceLine" id="cb3-3" data-line-number="3">    temp:units = &quot;Celsius&quot;;</a>
+<a class="sourceLine" id="cb3-4" data-line-number="4">    temp:coordinates = &quot;lon_rho lat_rho s_rho ocean_time&quot;;</a>
+<a class="sourceLine" id="cb3-5" data-line-number="5">double s_rho(s_rho);</a>
+<a class="sourceLine" id="cb3-6" data-line-number="6">    s_rho:long_name = &quot;S-coordinate at RHO-points&quot;;</a>
+<a class="sourceLine" id="cb3-7" data-line-number="7">    s_rho:positive = &quot;up&quot;;</a>
+<a class="sourceLine" id="cb3-8" data-line-number="8">    s_rho:standard_name = &quot;ocean_s_coordinate_g1&quot;;</a>
+<a class="sourceLine" id="cb3-9" data-line-number="9">    s_rho:formula_terms = &quot;s:s_rho C:Cs_r eta:zeta depth:h</a>
+<a class="sourceLine" id="cb3-10" data-line-number="10">                           depth_c:hc&quot;</a></code></pre></div>
+<div class="fragment">
+<p><a href="http://localhost:8888/notebooks/01-ClimateForecast.ipynb"> <img src="images/jupyterhub.svg" height=75 style="background-color:white"> </a></p>
+</div>
+</section>
+<section id="web-mapping-service" class="slide level1">
+<h1>Web Mapping Service</h1>
+<p>(OGC WMS)</p>
+<ul>
+<li class="fragment">Simple HTTP interface for requesting geo-registered map images</li>
+<li class="fragment">A WMS request defines the geographic layer(s) and area of interest to be processed</li>
+<li class="fragment">The response to the request is one or more geo-registered map images (returned as JPEG, PNG, etc)</li>
+</ul>
+<div class="fragment">
+<p><a href="http://localhost:8888/notebooks/02-WMS.ipynb"> <img src="images/jupyterhub.svg" height=75 style="background-color:white"> </a></p>
+</div>
+</section>
+<section id="erddap" class="slide level1">
+<h1>ERDDAP</h1>
+<p>The data server that the community is demanding</p>
+<ul>
+<li class="fragment">Flexible outputs: <code>.html</code> table, ESRI <code>.asc</code> and <code>.csv</code>, Google Earth <code>.kml</code>, OPeNDAP binary, <code>.mat</code>, <code>.nc</code>, ODV <code>.txt</code>, <code>.csv</code>, <code>.tsv</code>, <code>.json</code>, and <code>.xhtml</code></li>
+<li class="fragment">Free RESTful API to access the data</li>
+<li class="fragment">Standardize dates and time in the results</li>
+<li class="fragment">Server-side searching and slicing</li>
+</ul>
+<div class="fragment">
+<p><a href="http://localhost:8888/notebooks/03-ERDDAP.ipynb"> <img src="images/jupyterhub.svg" height=75 style="background-color:white"> </a></p>
+</div>
+</section>
+<section id="there-are-many-moving-parts" class="slide level1">
+<h1>There are many moving parts</h1>
+<p><img data-src="images/grind_gears.gif" /></p>
+</section>
+<section id="catalog-service-for-the-web" class="slide level1">
+<h1>Catalog Service for the Web</h1>
+<p>(CSW)</p>
+<ul>
+<li class="fragment">A single source to find endpoints</li>
+<li class="fragment">Nice python interface:<br><code>owslib.csw.CatalogueServiceWeb</code></li>
+<li class="fragment">Advanced filtering:<br><code>owslib.fes</code></li>
+</ul>
+<div class="fragment">
+<p><img src="images/one_ring.jpg" height=75 style="background-color:white"></p>
+</div>
+</section>
+<section id="harvesting" class="slide level1">
+<h1>Harvesting</h1>
+<p><img src="images/IOOS.svg" height=550 style="background-color:white"></p>
+</section>
+<section id="finding-the-web-services" class="slide level1">
+<h1>Finding the web services</h1>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> geolinks <span class="im">import</span> sniff_link</a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="op">&gt;&gt;&gt;</span> sniff_link(<span class="st">&#39;http://host/wms?service=SOS&#39;</span>)</a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="co">&#39;OGC:SOS&#39;</span></a>
+<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="op">&gt;&gt;&gt;</span> sniff_link(<span class="st">&#39;http://host/wms?service=OPeNDAP:OPeNDAP&#39;</span>)</a>
+<a class="sourceLine" id="cb4-5" data-line-number="5"><span class="co">&#39;OPeNDAP:OPeNDAP&#39;</span></a>
+<a class="sourceLine" id="cb4-6" data-line-number="6"><span class="op">&gt;&gt;&gt;</span> sniff_link(<span class="st">&#39;http://host/wms?service=WMS&#39;</span>)</a>
+<a class="sourceLine" id="cb4-7" data-line-number="7"><span class="co">&#39;OGC:WMS&#39;</span></a>
+<a class="sourceLine" id="cb4-8" data-line-number="8"><span class="op">&gt;&gt;&gt;</span> sniff_link(<span class="st">&#39;http://host/data/roads.kmz&#39;</span>)</a>
+<a class="sourceLine" id="cb4-9" data-line-number="9"><span class="co">&#39;OGC:KML&#39;</span></a>
+<a class="sourceLine" id="cb4-10" data-line-number="10"><span class="op">&gt;&gt;&gt;</span> sniff_link(<span class="st">&#39;http://host/data/roads.kml&#39;</span>)</a>
+<a class="sourceLine" id="cb4-11" data-line-number="11"><span class="co">&#39;OGC:KML&#39;</span></a></code></pre></div>
+<div class="fragment">
+<p><a href="http://localhost:8888/notebooks/04-CSW.ipynb"> <img src="images/jupyterhub.svg" height=75 style="background-color:white"> </a></p>
+</div>
+</section>
+<section id="putting-it-all-together-nhc" class="slide level1">
+<h1>Putting it all together: NHC</h1>
+<p>Meteorological stations in a National Hurricane Center path prediction.</p>
+<p><a href="http://localhost:8888/notebooks/2017-09-09-hurricane_irma.ipynb"> <img src="images/hurricane-irma.png" height=150 style="background-color:white"> </a></p>
+</section>
+<section id="putting-it-all-together-model-skill" class="slide level1">
+<h1>Putting it all together: Model skill</h1>
+<p>Modeled Significant Wave Height skill</p>
+<p><a href="http://localhost:8888/notebooks/2018-03-30-wave_height_assessment.ipynb"> <img src="images/wave-height.png" height=110 style="background-color:white"> </a></p>
+</section>
+<section id="putting-it-all-together-erddap-app" class="slide level1">
+<h1>Putting it all together: ERDDAP App</h1>
+<p>Finally the title notebook!</p>
+<p><a href="http://localhost:8888/notebooks/ERDDAP_timeseries_explorer-IOOS.ipynb"> <img src="images/erddap_app.png" height=400 style="background-color:white"> </a></p>
+</section>
+<section id="secoora-portal" class="slide level1">
+<h1>SECOORA Portal</h1>
+<iframe width="700" height="500" src="https://portal.secoora.org">
+</iframe>
+</section>
+<section id="summary" class="slide level1">
+<h1>Summary</h1>
+<ul>
+<li class="fragment">Standards, web services and catalogs allow us to serve data in a unified way</li>
+<li class="fragment">Python powered Jupyter gives us a powerful scientific, analysis and visualization environment to fetch</li>
+<li class="fragment">Widgets allow for fancy data exploration</li>
+</ul>
+</section>
+<section id="questions" class="slide level1">
+<h1>Questions?</h1>
+<h4 id="ocefpaf">(<a href="(https://github.com/ocefpaf)">ocefpaf</a>)</h4>
+<p><img data-src="images/twitter-github.png" /></p>
+<p>… g-mail, google+, etc.</p>
+<p><a href="https://ocefpaf.github.io/2018-SciPy-talk" class="uri">https://ocefpaf.github.io/2018-SciPy-talk</a></p>
+<p><a href="https://mybinder.org/v2/gh/ocefpaf/2018-SciPy-talk/gh-pages"><img data-src="http://mybinder.org/badge.svg" alt="Binder" /></a></p>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/math/math.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
