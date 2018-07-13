@@ -22,3 +22,4 @@ That's because you are a amazing! Here's how it works:
 That's because you are awesome! See the list below:
 
 - [Safe Handling Instructions for Missing Data - Dillon Niederhut](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/safe-handle-missing-data)
+- [UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction - Leland McInnes](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/umap)
