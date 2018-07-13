@@ -21,4 +21,4 @@ That's because you are a amazing! Here's how it works:
 
 That's because you are awesome! See the list below:
 
-- [Safe Handling Instructions for Missing Data - Dillon Niederhut](https://https://github.com/deniederhut/Slides-SciPyConf-2018/blob/master/url-to-your-folder)
+- [Safe Handling Instructions for Missing Data - Dillon Niederhut](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/safe-handle-missing-data)
