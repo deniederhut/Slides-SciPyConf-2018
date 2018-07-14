@@ -5,7 +5,7 @@
 
 That's because you are a amazing! Here's how it works:
 
-1. You'll need a GitHub account. You can [sign up here]().
+1. You'll need a GitHub account. You can [sign up here](https://github.com/join).
 2. Fork this repository by clicking the "fork" button.
 3. Add your slide deck to the local (on your laptop) copy of the repository. To make it easy for people to find, we prefer that it be inside a directory that is a simpified version of the name of your paper. You can add other files too, if you like.
 4. Add a link to it in the README file (please try to keep it alphabetical). The markdown syntax looks like this:
