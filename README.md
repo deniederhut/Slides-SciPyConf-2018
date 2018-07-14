@@ -30,3 +30,8 @@ That's because you are awesome! See the list below:
 ### Lightning talks
 
 - [Introducing JOSE: The Journal of Open Source Education - Kyle Niemeyer](https://github.com/deniederhut/Slides-SciPyConf-2018/blob/master/introducing-jose-lightning-talk/JOSE-lightning-talk.pdf)
+
+### Posters
+
+- [PyKED: a Python-based tool supporting data analysis and experimental reproducibility in combustion - Kyle Niemeyer & Bryan Weber](https://doi.org/10.5281/zenodo.1312239)
+
