@@ -21,6 +21,7 @@ That's because you are a amazing! Here's how it works:
 
 That's because you are awesome! See the list below:
 
+- [Devops Empowered Data Science with Ansible - Tim Hopper](https://tdhopper.com/blog/ansible-talk/)
 - [Safe Handling Instructions for Missing Data - Dillon Niederhut](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/safe-handle-missing-data)
 - ["Resurrecting Ancient Proteins in Python" slides](https://zsailer.github.io/scipy-2018/slides/index.html#/) - Zach Sailer [[Repo](https://github.com/Zsailer/scipy-2018) | [Notebook](https://github.com/Zsailer/scipy-2018/blob/master/intro-notebook.ipynb)]
 - [UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction - Leland McInnes](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/umap)
