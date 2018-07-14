@@ -1,0 +1,34 @@
+name: scipy-2018
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6
+  - appmode
+  - arrow
+  - bokeh
+  - bqplot
+  - bqplot
+  - cartopy
+  - erddapy
+  - geolinks
+  - geopandas
+  - ioos_tools
+  - ipyleaflet
+  - ipywidgets
+  - iris>=1.12
+  - jupyter
+  - lxml
+  - matplotlib
+  - netcdf4
+  - owslib
+  - pandas
+  - pendulum
+  - pyoos
+  - retrying
+  - rise
+  - shapely
+  - xlrd
+  - pip:
+    - git+https://github.com/python-visualization/folium
+
