@@ -21,6 +21,7 @@ That's because you are a amazing! Here's how it works:
 
 That's because you are awesome! See the list below:
 
+- [Cloudknot: A Python library to run your existing code on AWS Batch](https://richford.github.io/scipy2018-cloudknot-talk/) - Adam Richie-Halford [[Repo](https://github.com/richford/scipy2018-cloudknot-talk) | [Slides](https://richford.github.io/scipy2018-cloudknot-talk/#/cover)]
 - [Devops Empowered Data Science with Ansible - Tim Hopper](https://tdhopper.com/blog/ansible-talk/)
 - [Safe Handling Instructions for Missing Data - Dillon Niederhut](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/safe-handle-missing-data)
 - ["Resurrecting Ancient Proteins in Python" slides](https://zsailer.github.io/scipy-2018/slides/index.html#/) - Zach Sailer [[Repo](https://github.com/Zsailer/scipy-2018) | [Notebook](https://github.com/Zsailer/scipy-2018/blob/master/intro-notebook.ipynb)]
