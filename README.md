@@ -27,6 +27,7 @@ That's because you are awesome! See the list below:
 - [Should this Drug be Approved? A Bayesian’s Answer with Stan](https://https://github.com/deniederhut/Slides-SciPyConf-2018/blob/master/bayesian-stan-drug-approval) - Konstantinos Vamvourellis & Marianne Corvellec
 - [UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction - Leland McInnes](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/umap)
 - [Yaksh: Facilitating Learning by Doing - Prabhu Ramachandran](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/yaksh-learning-by-doing)
+- [dask-ml: scalable machine learning](https://tomaugspurger.github.io/slides/dask-ml-scipy)
 
 ### Lightning talks
 
