@@ -20,7 +20,7 @@ That's because you are a amazing! Here's how it works:
 ## I am someone who is trying to find a slide deck
 
 That's because you are awesome! See the list below:
-- [Addressing Multithreading and Multiprocessing in Transparent and Pythonic Methods (slides)](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/pythonic-multithreading-multiprocessing) - David Liu and Anton Malakhov | [[Repo](https://github.com/IntelPython/composability_bench/tree/master/scipy2018_demo)]
+- [Addressing Multithreading and Multiprocessing in Transparent and Pythonic Methods](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/pythonic-multithreading-multiprocessing) - David Liu and Anton Malakhov [[Repo](https://github.com/IntelPython/composability_bench/tree/master/scipy2018_demo) | [Slides](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/pythonic-multithreading-multiprocessing/pythonic_multithreading_multiprocessing.pdf)]
 - [Binder 2.0: The Next Generation of Reproducible Scientific Environments with repo2docker and BinderHub - Chris Holdgraf and Min Ragan-Kelley](http://bit.ly/scipy-2018-binder)
 - [Cloudknot: A Python library to run your existing code on AWS Batch](https://richford.github.io/scipy2018-cloudknot-talk/) - Adam Richie-Halford [[Repo](https://github.com/richford/scipy2018-cloudknot-talk) | [Slides](https://richford.github.io/scipy2018-cloudknot-talk/#/cover)]
 - [dask-ml: scalable machine learning](https://tomaugspurger.github.io/slides/dask-ml-scipy)
