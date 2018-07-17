@@ -25,6 +25,7 @@ That's because you are awesome! See the list below:
 - [dask-ml: scalable machine learning](https://tomaugspurger.github.io/slides/dask-ml-scipy)
 - [Devops Empowered Data Science with Ansible - Tim Hopper](https://tdhopper.com/blog/ansible-talk/)
 - [Safe Handling Instructions for Missing Data - Dillon Niederhut](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/safe-handle-missing-data)
+- [scikit-build: A Build System Generator for CPython C/C++/Fortran/Cython Extensions - Jean-Christophe Fillion-Robin](scikit-build-talk#readme)
 - ["Resurrecting Ancient Proteins in Python" slides](https://zsailer.github.io/scipy-2018/slides/index.html#/) - Zach Sailer [[Repo](https://github.com/Zsailer/scipy-2018) | [Notebook](https://github.com/Zsailer/scipy-2018/blob/master/intro-notebook.ipynb)]
 - [Should this Drug be Approved? A Bayesian’s Answer with Stan](https://github.com/deniederhut/Slides-SciPyConf-2018/blob/master/bayesian-stan-drug-approval) - Konstantinos Vamvourellis & Marianne Corvellec
 - [UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction - Leland McInnes](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/umap)
