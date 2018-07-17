@@ -21,6 +21,7 @@ That's because you are a amazing! Here's how it works:
 
 That's because you are awesome! See the list below:
 
+- [Binder 2.0: The Next Generation of Reproducible Scientific Environments with repo2docker and BinderHub - Chris Holdgraf and Min Ragan-Kelley](http://bit.ly/scipy-2018-binder)
 - [Cloudknot: A Python library to run your existing code on AWS Batch](https://richford.github.io/scipy2018-cloudknot-talk/) - Adam Richie-Halford [[Repo](https://github.com/richford/scipy2018-cloudknot-talk) | [Slides](https://richford.github.io/scipy2018-cloudknot-talk/#/cover)]
 - [dask-ml: scalable machine learning](https://tomaugspurger.github.io/slides/dask-ml-scipy)
 - [Devops Empowered Data Science with Ansible - Tim Hopper](https://tdhopper.com/blog/ansible-talk/)
