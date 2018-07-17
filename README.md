@@ -33,7 +33,7 @@ That's because you are awesome! See the list below:
 - [Should this Drug be Approved? A Bayesian’s Answer with Stan](https://github.com/deniederhut/Slides-SciPyConf-2018/blob/master/bayesian-stan-drug-approval) - Konstantinos Vamvourellis & Marianne Corvellec
 - [Sneaking Data into Containers with the Whole Tale - Kacper Kowalik](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/sneaking-data-into-containers-with-WT)
 - [UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction - Leland McInnes](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/umap)
-- [Website for interacting with oceanographic data and numerical model output - Kristen Thyng](https://https://github.com/deniederhut/Slides-SciPyConf-2018/blob/master/website-ocean)
+- [Website for interacting with oceanographic data and numerical model output - Kristen Thyng](https://github.com/deniederhut/Slides-SciPyConf-2018/blob/master/website-ocean)
 - [Yaksh: Facilitating Learning by Doing - Prabhu Ramachandran](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/yaksh-learning-by-doing)
 - ["Leveraging Jupyter, Rust, and WebAssembly for Browser-Based Visual Data Exploration" slides](https://munkm.github.io/2018-07-13-scipy) - Madicken Munk [[Repo](https://github.com/munkm/2018-07-13-scipy) | [Notebook](https://github.com/munkm/2018-07-13-scipy/blob/master/notebooks/demo-scipy-2018.ipynb)]
 
