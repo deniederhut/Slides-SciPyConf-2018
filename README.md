@@ -39,5 +39,6 @@ That's because you are awesome! See the list below:
 
 ### Posters
 
+- [itk-jupyter-widgets: Interactive 2D and 3D Image Visualization for Jupyter - Matthew McCormick et. al.](https://github.com/thewtex/scipy-2018-itk-jupyter-widgets-poster)
 - [PyKED: a Python-based tool supporting data analysis and experimental reproducibility in combustion - Kyle Niemeyer & Bryan Weber](https://doi.org/10.5281/zenodo.1312239)
 - [Oxidizing Python: writing extensions in Rust - Luiz Irber](https://doi.org/10.7490/f1000research.1115726.1)
