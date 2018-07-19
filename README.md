@@ -25,7 +25,7 @@ That's because you are awesome! See the list below:
 - [Bringing ipywidgets Support to plotly.py - Jon Mease](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/plotly-ipywidgets)
 - [Building an object-oriented Python interface for the Generic Mapping Tools - Leonardo
   Uieda](https://doi.org/10.6084/m9.figshare.6814052) [[Repo](https://github.com/leouieda/scipy2018) | [Notebook](http://try.gmtpython.xyz/)]
-- [cis_interface: A Python package for connecting scientific models across scales and languages - Meagan Lang](https://https://github.com/deniederhut/Slides-SciPyConf-2018/blob/master/cis_interface)
+- [cis_interface: A Python package for connecting scientific models across scales and languages](https://https://github.com/deniederhut/Slides-SciPyConf-2018/blob/master/cis_interface) - Meagan Lang [[Repo](https://github.com/cropsinsilico/cis_interface) | [Docs](https://cropsinsilico.github.io/cis_interface/)]
 - [Cloudknot: A Python library to run your existing code on AWS Batch](https://richford.github.io/scipy2018-cloudknot-talk/) - Adam Richie-Halford [[Repo](https://github.com/richford/scipy2018-cloudknot-talk) | [Slides](https://richford.github.io/scipy2018-cloudknot-talk/#/cover)]
 - [dask-ml: scalable machine learning](https://tomaugspurger.github.io/slides/dask-ml-scipy)
 - [Devops Empowered Data Science with Ansible - Tim Hopper](https://tdhopper.com/blog/ansible-talk/)
