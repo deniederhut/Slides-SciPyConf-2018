@@ -44,6 +44,7 @@ That's because you are awesome! See the list below:
 ### Lightning talks
 
 - [Introducing JOSE: The Journal of Open Source Education - Kyle Niemeyer](https://github.com/deniederhut/Slides-SciPyConf-2018/blob/master/introducing-jose-lightning-talk/JOSE-lightning-talk.pdf)
+- [Slicer, Python, Xeus and Jupyter - Jean-Christophe Fillion-Robin](slicer-python-xeus-jupyter-lightning-talk#readme)
 
 ### Posters
 
