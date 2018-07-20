@@ -25,10 +25,12 @@ That's because you are awesome! See the list below:
 - [Bringing ipywidgets Support to plotly.py - Jon Mease](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/plotly-ipywidgets)
 - [Building an object-oriented Python interface for the Generic Mapping Tools - Leonardo
   Uieda](https://doi.org/10.6084/m9.figshare.6814052) [[Repo](https://github.com/leouieda/scipy2018) | [Notebook](http://try.gmtpython.xyz/)]
+- [cis_interface: A Python package for connecting scientific models across scales and languages](https://https://github.com/deniederhut/Slides-SciPyConf-2018/blob/master/cis_interface) - Meagan Lang [[Repo](https://github.com/cropsinsilico/cis_interface) | [Docs](https://cropsinsilico.github.io/cis_interface/)]
 - [Cloudknot: A Python library to run your existing code on AWS Batch](https://richford.github.io/scipy2018-cloudknot-talk/) - Adam Richie-Halford [[Repo](https://github.com/richford/scipy2018-cloudknot-talk) | [Slides](https://richford.github.io/scipy2018-cloudknot-talk/#/cover)]
 - [dask-ml: scalable machine learning](https://tomaugspurger.github.io/slides/dask-ml-scipy)
 - [Devops Empowered Data Science with Ansible - Tim Hopper](https://tdhopper.com/blog/ansible-talk/)
 - [Harnessing the Power of Scientific Python to Investigate the Biogeochemistry of the South Pacific - Noelle Held and Jaclyn Saunders](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/harnessing_scipy_marine_biogeochemistry)
+- [Econ-ARK and HARK: Open Source Tools for Computational Economics - Matthew N. White](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/econ-ark)
 - [ITK: The Insight Segmentation and Registration Toolkit - Matthew McCormick](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/itk)
 - [Pangeo: A Big-data Ecosystem for Scalable Earth System Science](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/pangeo) - Joe Hamman
 - [Safe Handling Instructions for Missing Data - Dillon Niederhut](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/safe-handle-missing-data)
