@@ -28,6 +28,7 @@ That's because you are awesome! See the list below:
 - [cis_interface: A Python package for connecting scientific models across scales and languages](https://https://github.com/deniederhut/Slides-SciPyConf-2018/blob/master/cis_interface) - Meagan Lang [[Repo](https://github.com/cropsinsilico/cis_interface) | [Docs](https://cropsinsilico.github.io/cis_interface/)]
 - [Cloudknot: A Python library to run your existing code on AWS Batch](https://richford.github.io/scipy2018-cloudknot-talk/) - Adam Richie-Halford [[Repo](https://github.com/richford/scipy2018-cloudknot-talk) | [Slides](https://richford.github.io/scipy2018-cloudknot-talk/#/cover)]
 - [dask-ml: scalable machine learning](https://tomaugspurger.github.io/slides/dask-ml-scipy)
+- [Detecting anomalies using statistical distances - Charles Masson](https://docs.google.com/presentation/d/1UE3cUxviX5EzyPzdoEbQm-0lL3Y6Htr0wRF2t3-5xNg/edit?usp=sharing)
 - [Devops Empowered Data Science with Ansible - Tim Hopper](https://tdhopper.com/blog/ansible-talk/)
 - [Harnessing the Power of Scientific Python to Investigate the Biogeochemistry of the South Pacific - Noelle Held and Jaclyn Saunders](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/harnessing_scipy_marine_biogeochemistry)
 - [Econ-ARK and HARK: Open Source Tools for Computational Economics - Matthew N. White](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/econ-ark)
