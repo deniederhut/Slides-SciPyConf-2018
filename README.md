@@ -27,6 +27,7 @@ That's because you are awesome! See the list below:
   Uieda](https://doi.org/10.6084/m9.figshare.6814052) [[Repo](https://github.com/leouieda/scipy2018) | [Notebook](http://try.gmtpython.xyz/)]
 - [Cloudknot: A Python library to run your existing code on AWS Batch](https://richford.github.io/scipy2018-cloudknot-talk/) - Adam Richie-Halford [[Repo](https://github.com/richford/scipy2018-cloudknot-talk) | [Slides](https://richford.github.io/scipy2018-cloudknot-talk/#/cover)]
 - [dask-ml: scalable machine learning](https://tomaugspurger.github.io/slides/dask-ml-scipy)
+- [Detecting anomalies using statistical distances - Charles Masson](https://docs.google.com/presentation/d/1UE3cUxviX5EzyPzdoEbQm-0lL3Y6Htr0wRF2t3-5xNg/edit?usp=sharing)
 - [Devops Empowered Data Science with Ansible - Tim Hopper](https://tdhopper.com/blog/ansible-talk/)
 - [ITK: The Insight Segmentation and Registration Toolkit - Matthew McCormick](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/itk)
 - [Pangeo: A Big-data Ecosystem for Scalable Earth System Science](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/pangeo) - Joe Hamman
