@@ -33,6 +33,7 @@ That's because you are awesome! See the list below:
 - [Harnessing the Power of Scientific Python to Investigate the Biogeochemistry of the South Pacific - Noelle Held and Jaclyn Saunders](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/harnessing_scipy_marine_biogeochemistry)
 - [Econ-ARK and HARK: Open Source Tools for Computational Economics - Matthew N. White](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/econ-ark)
 - [ITK: The Insight Segmentation and Registration Toolkit - Matthew McCormick](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/itk)
+- [Learning mechanical vibrations through computation thinking](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/learning-mechanical-vibrations) - Jason Moore, Kenneth Lyons
 - [Pangeo: A Big-data Ecosystem for Scalable Earth System Science](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/pangeo) - Joe Hamman
 - [Safe Handling Instructions for Missing Data - Dillon Niederhut](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/safe-handle-missing-data)
 - [scikit-build: A Build System Generator for CPython C/C++/Fortran/Cython Extensions - Jean-Christophe Fillion-Robin](scikit-build-talk#readme)
