@@ -1,5 +1,7 @@
 # Jupyter Notebook Driven Development with PYNT (PYthon iNTeractive)
 
+https://github.com/ebanner/pynt
+
 ## The Short Description
 
 In this talk, I will present pynt (*py*thon i*nt*eractive), a tool which leverages the interactive capabilities of Jupyter Notebooks to provide a rich programming environment conducive to the later stages of software development. I will begin by discussing common workflow in software development, as well their limitations. I will then motivate the merits of pynt by demonstrating how adopting a Jupyter-Notebook-Driven-Development workflow can overcome some of these limitations, and then how pynt streamlines this workflow. I will end with a feature-tour of pynt and the different approach to software development workflow that pynt encourages.
