@@ -34,6 +34,7 @@ That's because you are awesome! See the list below:
 - [Econ-ARK and HARK: Open Source Tools for Computational Economics - Matthew N. White](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/econ-ark)
 - [ITK: The Insight Segmentation and Registration Toolkit - Matthew McCormick](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/itk)
 - [Jupyter Notebook Driven Development with PYNT (PYthon iNTeractive)](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/notebook-driven-development) - Edward Banner [[Repo](https://github.com/ebanner/pynt)] [[Slides](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/notebook-driven-development)]
+- [Learning mechanical vibrations through computation thinking](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/learning-mechanical-vibrations) - Jason Moore, Kenneth Lyons
 - [Pangeo: A Big-data Ecosystem for Scalable Earth System Science](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/pangeo) - Joe Hamman
 - [Safe Handling Instructions for Missing Data - Dillon Niederhut](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/safe-handle-missing-data)
 - [scikit-build: A Build System Generator for CPython C/C++/Fortran/Cython Extensions - Jean-Christophe Fillion-Robin](scikit-build-talk#readme)
