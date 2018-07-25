@@ -38,6 +38,7 @@ That's because you are awesome! See the list below:
 - [Learning mechanical vibrations through computation thinking](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/learning-mechanical-vibrations) - Jason Moore, Kenneth Lyons
 - [Pangeo: A Big-data Ecosystem for Scalable Earth System Science](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/pangeo) - Joe Hamman
 - [Safe Handling Instructions for Missing Data - Dillon Niederhut](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/safe-handle-missing-data)
+- [Scalable Computer Vision with Aerial and Satellite Imagery - Virginia Ng](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/scalable_computervision)
 - [scikit-build: A Build System Generator for CPython C/C++/Fortran/Cython Extensions - Jean-Christophe Fillion-Robin](scikit-build-talk#readme)
 - ["Resurrecting Ancient Proteins in Python" slides](https://zsailer.github.io/scipy-2018/slides/index.html#/) - Zach Sailer [[Repo](https://github.com/Zsailer/scipy-2018) | [Notebook](https://github.com/Zsailer/scipy-2018/blob/master/intro-notebook.ipynb)]
 - [SatPy - A Python Library for Weather Satellite Imagery](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/satpy/) - David Hoese
