@@ -27,6 +27,7 @@ That's because you are awesome! See the list below:
   Uieda](https://doi.org/10.6084/m9.figshare.6814052) [[Repo](https://github.com/leouieda/scipy2018) | [Notebook](http://try.gmtpython.xyz/)]
 - [cis_interface: A Python package for connecting scientific models across scales and languages](https://github.com/deniederhut/Slides-SciPyConf-2018/blob/master/cis_interface) - Meagan Lang [[Repo](https://github.com/cropsinsilico/cis_interface) | [Docs](https://cropsinsilico.github.io/cis_interface/)]
 - [Cloudknot: A Python library to run your existing code on AWS Batch](https://richford.github.io/scipy2018-cloudknot-talk/) - Adam Richie-Halford [[Repo](https://github.com/richford/scipy2018-cloudknot-talk) | [Slides](https://richford.github.io/scipy2018-cloudknot-talk/#/cover)]
+- [Convex Optimization in Python with CVXPY](https://https://github.com/deniederhut/Slides-SciPyConf-2018/blob/master/cvxpy)
 - [Data Visualization for Scientists - Zan Armstrong](https://https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/data-visualization-for-scientists)
 - [dask-ml: scalable machine learning](https://tomaugspurger.github.io/slides/dask-ml-scipy)
 - [Detecting anomalies using statistical distances - Charles Masson](https://docs.google.com/presentation/d/1UE3cUxviX5EzyPzdoEbQm-0lL3Y6Htr0wRF2t3-5xNg/edit?usp=sharing)
