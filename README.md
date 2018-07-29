@@ -21,20 +21,27 @@ That's because you are a amazing! Here's how it works:
 
 That's because you are awesome! See the list below:
 - [Addressing Multithreading and Multiprocessing in Transparent and Pythonic Methods](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/pythonic-multithreading-multiprocessing) - David Liu and Anton Malakhov [[Repo](https://github.com/IntelPython/composability_bench/tree/master/scipy2018_demo) | [Slides](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/pythonic-multithreading-multiprocessing/pythonic_multithreading_multiprocessing.pdf)]
+- [Apache Arrow: A Cross-Language Development Platform for In-memory Data - Wes McKinney](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/apache-arrow)
 - [Binder 2.0: The Next Generation of Reproducible Scientific Environments with repo2docker and BinderHub - Chris Holdgraf and Min Ragan-Kelley](http://bit.ly/scipy-2018-binder)
 - [Bringing ipywidgets Support to plotly.py - Jon Mease](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/plotly-ipywidgets)
 - [Building an object-oriented Python interface for the Generic Mapping Tools - Leonardo
   Uieda](https://doi.org/10.6084/m9.figshare.6814052) [[Repo](https://github.com/leouieda/scipy2018) | [Notebook](http://try.gmtpython.xyz/)]
-- [cis_interface: A Python package for connecting scientific models across scales and languages](https://https://github.com/deniederhut/Slides-SciPyConf-2018/blob/master/cis_interface) - Meagan Lang [[Repo](https://github.com/cropsinsilico/cis_interface) | [Docs](https://cropsinsilico.github.io/cis_interface/)]
+- [cis_interface: A Python package for connecting scientific models across scales and languages](https://github.com/deniederhut/Slides-SciPyConf-2018/blob/master/cis_interface) - Meagan Lang [[Repo](https://github.com/cropsinsilico/cis_interface) | [Docs](https://cropsinsilico.github.io/cis_interface/)]
 - [Cloudknot: A Python library to run your existing code on AWS Batch](https://richford.github.io/scipy2018-cloudknot-talk/) - Adam Richie-Halford [[Repo](https://github.com/richford/scipy2018-cloudknot-talk) | [Slides](https://richford.github.io/scipy2018-cloudknot-talk/#/cover)]
+- [Convex Optimization in Python with CVXPY](https://https://github.com/deniederhut/Slides-SciPyConf-2018/blob/master/cvxpy)
+- [Data Visualization for Scientists - Zan Armstrong](https://https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/data-visualization-for-scientists)
 - [dask-ml: scalable machine learning](https://tomaugspurger.github.io/slides/dask-ml-scipy)
 - [Detecting anomalies using statistical distances - Charles Masson](https://docs.google.com/presentation/d/1UE3cUxviX5EzyPzdoEbQm-0lL3Y6Htr0wRF2t3-5xNg/edit?usp=sharing)
+- [Development of MetPy’s Declarative Plotting Interface](https://github.com/deniederhut/Slides-SciPyConfg-2018/tree/master/metpy-declarative-interface)
 - [Devops Empowered Data Science with Ansible - Tim Hopper](https://tdhopper.com/blog/ansible-talk/)
 - [Harnessing the Power of Scientific Python to Investigate the Biogeochemistry of the South Pacific - Noelle Held and Jaclyn Saunders](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/harnessing_scipy_marine_biogeochemistry)
 - [Econ-ARK and HARK: Open Source Tools for Computational Economics - Matthew N. White](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/econ-ark)
 - [ITK: The Insight Segmentation and Registration Toolkit - Matthew McCormick](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/itk)
+- [Jupyter Notebook Driven Development with PYNT (PYthon iNTeractive)](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/notebook-driven-development) - Edward Banner [[Repo](https://github.com/ebanner/pynt)] [[Slides](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/notebook-driven-development)]
+- [Learning mechanical vibrations through computation thinking](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/learning-mechanical-vibrations) - Jason Moore, Kenneth Lyons
 - [Pangeo: A Big-data Ecosystem for Scalable Earth System Science](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/pangeo) - Joe Hamman
 - [Safe Handling Instructions for Missing Data - Dillon Niederhut](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/safe-handle-missing-data)
+- [Scalable Computer Vision with Aerial and Satellite Imagery - Virginia Ng](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/scalable_computervision)
 - [scikit-build: A Build System Generator for CPython C/C++/Fortran/Cython Extensions - Jean-Christophe Fillion-Robin](scikit-build-talk#readme)
 - ["Resurrecting Ancient Proteins in Python" slides](https://zsailer.github.io/scipy-2018/slides/index.html#/) - Zach Sailer [[Repo](https://github.com/Zsailer/scipy-2018) | [Notebook](https://github.com/Zsailer/scipy-2018/blob/master/intro-notebook.ipynb)]
 - [SatPy - A Python Library for Weather Satellite Imagery](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/satpy/) - David Hoese
