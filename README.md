@@ -21,6 +21,7 @@ That's because you are a amazing! Here's how it works:
 
 That's because you are awesome! See the list below:
 - [Addressing Multithreading and Multiprocessing in Transparent and Pythonic Methods](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/pythonic-multithreading-multiprocessing) - David Liu and Anton Malakhov [[Repo](https://github.com/IntelPython/composability_bench/tree/master/scipy2018_demo) | [Slides](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/pythonic-multithreading-multiprocessing/pythonic_multithreading_multiprocessing.pdf)]
+- [Apache Arrow: A Cross-Language Development Platform for In-memory Data - Wes McKinney](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/apache-arrow)
 - [Binder 2.0: The Next Generation of Reproducible Scientific Environments with repo2docker and BinderHub - Chris Holdgraf and Min Ragan-Kelley](http://bit.ly/scipy-2018-binder)
 - [Bringing ipywidgets Support to plotly.py - Jon Mease](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/plotly-ipywidgets)
 - [Building an object-oriented Python interface for the Generic Mapping Tools - Leonardo
