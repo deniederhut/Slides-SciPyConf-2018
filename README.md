@@ -51,6 +51,7 @@ That's because you are awesome! See the list below:
 - [Website for interacting with oceanographic data and numerical model output - Kristen Thyng](https://github.com/deniederhut/Slides-SciPyConf-2018/blob/master/website-ocean)
 - [Yaksh: Facilitating Learning by Doing - Prabhu Ramachandran](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/yaksh-learning-by-doing)
 - ["Leveraging Jupyter, Rust, and WebAssembly for Browser-Based Visual Data Exploration" slides](https://munkm.github.io/2018-07-13-scipy) - Madicken Munk [[Repo](https://github.com/munkm/2018-07-13-scipy) | [Notebook](https://github.com/munkm/2018-07-13-scipy/blob/master/notebooks/demo-scipy-2018.ipynb)]
+- [Recipe2Vec or How Does My Robot Know Which Recipes are Related - Meghan Heintz](https://https://github.com/deniederhut/Slides-SciPyConf-2018/blob/master/recipe2vec-related-recipes)
 
 ### Lightning talks
 
