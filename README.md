@@ -40,6 +40,7 @@ That's because you are awesome! See the list below:
 - [Jupyter Notebook Driven Development with PYNT (PYthon iNTeractive)](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/notebook-driven-development) - Edward Banner [[Repo](https://github.com/ebanner/pynt)] [[Slides](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/notebook-driven-development)]
 - [Learning mechanical vibrations through computation thinking](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/learning-mechanical-vibrations) - Jason Moore, Kenneth Lyons
 - [Pangeo: A Big-data Ecosystem for Scalable Earth System Science](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/pangeo) - Joe Hamman
+- [Parsl: Enabling Scalable Interactive Computing in Python](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/parsl) - Kyle Chard
 - [Safe Handling Instructions for Missing Data - Dillon Niederhut](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/safe-handle-missing-data)
 - [Scalable Computer Vision with Aerial and Satellite Imagery - Virginia Ng](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/scalable_computervision)
 - [scikit-build: A Build System Generator for CPython C/C++/Fortran/Cython Extensions - Jean-Christophe Fillion-Robin](scikit-build-talk#readme)
