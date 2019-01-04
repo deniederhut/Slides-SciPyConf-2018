@@ -72,7 +72,7 @@ That's because you are awesome! See the list below:
 - [geopandas](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/scipy-tools-plenaries/geopandas.pptx)
 - [girder](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/scipy-tools-plenaries/girder.pptx)
 -  [jupyter](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/scipy-tools-plenaries/jupyter.pptx)
-- [matplotlib](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/scipy-tools-plenaries/Matplotlib.pptx)
+- [matplotlib](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/scipy-tools-plenaries/matplotlib.pptx)
 -  [mayavi](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/scipy-tools-plenaries/mayavi.pptx)
 - [numba](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/scipy-tools-plenaries/numba.pptx)
 -  [numpy](https://github.com/deniederhut/Slides-SciPyConf-2018/tree/master/scipy-tools-plenaries/numpy.pptx)
